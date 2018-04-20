@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "54449299660",
+    "firebase_url": "https://video-streaming-3ed70.firebaseio.com",
+    "project_id": "video-streaming-3ed70",
+    "storage_bucket": "video-streaming-3ed70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54449299660:android:9245f2a49f7fb705",
+        "android_client_info": {
+          "package_name": "com.digipodium.taranya.videostreaming_main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54449299660-jorhej3uemt1b884frdq5sasmpobqlj3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digipodium.taranya.videostreaming_main",
+            "certificate_hash": "968dd5e9ed88493dad09caa60aa9c340b91dbb8a"
+          }
+        },
+        {
+          "client_id": "54449299660-4srlcrc4pcermp2argcdk5fqadml8dpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhX0vPlD2hB1dod1rI1TQOJIQnncaodTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54449299660-4srlcrc4pcermp2argcdk5fqadml8dpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

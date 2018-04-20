@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.digipodium.taranya.videostreaming_main.wifiActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_wifi">
+
+    <TextView
+        android:id="@+id/wifi_on"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="Wi-Fi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/see_network"
+        app:layout_constraintEnd_toStartOf="@+id/switch_wifion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_wifion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/see_network"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wifi_on"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/see_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="To see available networks, turn on Wi-Fi"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/et_scan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_wifion" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_showifi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_scan"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/show_wifi_item" />
+
+    <TextView
+        android:id="@+id/et_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="8dp"
+        android:text="Scan"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/rv_showifi"
+        app:layout_constraintEnd_toStartOf="@+id/pb_scan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/see_network" />
+
+    <ProgressBar
+        android:id="@+id/pb_scan"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_showifi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_scan"
+        app:layout_constraintTop_toBottomOf="@+id/see_network" />
+
+</android.support.constraint.ConstraintLayout>
